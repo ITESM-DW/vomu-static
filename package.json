@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "compile:sass": "node-sass scss/custom.scss assets/css/main.css -w"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1"
+  }
+}

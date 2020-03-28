@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="mh-100">
+        <div class="container mx-auto m-5">
+            <div class="row justify-content-center">
+                <div class="card">
+                    <div class="card-header">
+                        <img class="w-50" src="assets/images/logo.png" alt="Vomu" />
+                    </div>
+                    <div class="card-body">
+                        <form action="/profile.html" class="was-validated">
+                            <div class="form-group">
+                                <label for="uname">Username:</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a class="btn btn-primary" href="/index.html" role="button">Back</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
