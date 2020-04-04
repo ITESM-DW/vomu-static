@@ -3,33 +3,31 @@
 // BOOTSTRAP
 // @import "../node_modules/bootstrap/scss/bootstrap";
 // Main
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/utilities";
+@import "bootstrap/transitions";
+@import "bootstrap/bootstrap-reboot";
+@import "bootstrap/type";
 // Basic
-@import "../node_modules/bootstrap/scss/utilities/borders";
-@import "../node_modules/bootstrap/scss/pagination";
-@import "../node_modules/bootstrap/scss/forms";
-@import "../node_modules/bootstrap/scss/list-group";
-// Navbar
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/transitions";
-@import "../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "bootstrap/utilities/borders";
+@import "bootstrap/pagination";
+@import "bootstrap/forms";
+@import "bootstrap/list-group";
 // Carousel
-@import "../node_modules/bootstrap/scss/carousel";
-@import "../node_modules/bootstrap/scss/images";
+@import "bootstrap/carousel";
+@import "bootstrap/images";
 // Jumbotron / Card
-@import "../node_modules/bootstrap/scss/jumbotron";
-@import "../node_modules/bootstrap/scss/card";
-@import "../node_modules/bootstrap/scss/buttons";
-@import "../node_modules/bootstrap/scss/grid";
+@import "bootstrap/jumbotron";
+@import "bootstrap/card";
+@import "bootstrap/buttons";
+@import "bootstrap/grid";
 
 
 
 @import "utilities/text";
+@import "components/navbar";
 
 body {
   @include gradient-directional($start-color: theme-color(),$end-color: theme-color("secondary"), $deg: 45deg);
