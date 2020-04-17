@@ -72,29 +72,29 @@
         </nav>
     </header>
 
-    <section class="w-100 h-100">
-                <div class="d-flex justify-content-between flex-column flex-lg-row m-5">
-                    <div class="card bg-light">
-                        <div class="d-flex justify-content-around align-items-center flex-row">
-                            <div class="m-5">
-                                <img class="img-fluid border border-black mw-100 h-auto"
+    <section class="profile">
+                <div class="profile__container">
+                    <div class="profile__card">
+                        <div class="profile__card__row">
+                            <div class="profile__row-element">
+                                <img class="profile__img border-black"
                                     src="assets/images/kaci-baum-2.jpg" alt="">
-                                <h5 class="display-5 text-primary text-uppercase">@KaciBaum</h1>
+                                <h5 class="profile__img__label display-5">@KaciBaum</h1>
                             </div>
-                            <div class="list-group w-100 m-5">
+                            <div class="profile__stories profile__row-element">
                                 <h2>Stories</h2>
-                                <a href="#" class="list-group-item list-group-item-action active">
+                                <a href="#" class="profile__stories__item active">
                                     Cras justo odio
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                                <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at
+                                <a href="#" class="profile__stories__item">Dapibus ac facilisis in</a>
+                                <a href="#" class="profile__stories__item">Morbi leo risus</a>
+                                <a href="#" class="profile__stories__item">Porta ac consectetur ac</a>
+                                <a href="#" class="profile__stories__item disabled">Vestibulum at
                                     eros</a>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text drop-case">Et excepteur officia id adipisicing duis aute eiusmod aute
+                        <div class="profile__summary">
+                            <p class="profile__summary__text drop-case">Et excepteur officia id adipisicing duis aute eiusmod aute
                                 cillum anim esse
                                 nisi. Nulla duis commodo est officia. Laboris ullamco proident aliqua fugiat labore
                                 officia
@@ -104,17 +104,17 @@
                                 occaecat est dolore ipsum ipsum voluptate dolor veniam. Dolore veniam quis laboris nulla
                                 ex
                                 fugiat anim nulla sunt anim aliqua.</p>
-                            <hr class="my-2">
+                            <hr class="profile__break">
                         </div>
                     </div>
-                    <form class="container-fluid text-white">
-                        <div class="form-group">
+                    <form class="profile__form">
+                        <div class="profile__form__group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="marie@curie.com">
+                            <input type="email" class="profile__form__control" id="email" placeholder="marie@curie.com">
                         </div>
-                        <div class="form-group">
+                        <div class="profile__form__group">
                             <label for="country">Country</label>
-                            <select class="form-control" id="country">
+                            <select class="profile__form__control" id="country">
                                 <option>Mexico</option>
                                 <option>Mexico</option>
                                 <option>Mexico</option>
@@ -122,21 +122,21 @@
                                 <option>Mexico</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="profile__form__group">
                             <label for="exampleFormControlTextarea1">Description</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="profile__form__conrol" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <div class="form-group">
-                            <div class="form-group">
+                        <div class="profile__form__group">
+                            <div class="profile__form__group">
                                 <label for="file">Profile picture</label>
-                                <input type="file" class="form-control-file" name="" id="" placeholder=""
+                                <input type="file" class="profile__form__control__file" name="" id="" placeholder=""
                                     aria-describedby="fileHelpId">
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Save</button>
+                        <button class="profile__main-btn" type="submit">Save</button>
                     </form>
-                    <div class="container bg-light">
-                        <div class="w-100 h-100" id="scrollingContainer">
+                    <div class="profile__compose">
+                        <div class="profile__compose__epic" id="scrollingContainer">
                             <div id="quill-container">
                         
                             </div>
