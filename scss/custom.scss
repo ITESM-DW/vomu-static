@@ -28,6 +28,7 @@
 
 @import "utilities/text";
 @import "components/navbar";
+@import "components/login";
 
 body {
   @include gradient-directional($start-color: theme-color(),$end-color: theme-color("secondary"), $deg: 45deg);
