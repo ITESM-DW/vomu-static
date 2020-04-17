@@ -45,13 +45,13 @@
     </nav>
 </header>
 
-    <div class="myJumbotron">
+    <div class="pageInfo">
         <div class="container">
-            <h1 class="myJumbotron__title">Feed</h1>
-            <p class="myLead">Get to know, share and help</p>
+            <h1 class="pageInfo__title">Feed</h1>
+            <p class="pageInfo__description">Get to know, share and help</p>
             <hr class="my-2">
             <p class="myLead">
-                <a class="myJumbotron__button" href="/write.html" role="button">Add your own!</a>
+                <a class="pageInfo__button" href="/write.html" role="button">Add your own!</a>
             </p>
         </div>
     </div>
@@ -103,24 +103,27 @@
             </div>
         </div>
         <nav aria-label="Page navigation">
-            <ul class="myPagination">
-                <li class="myPagination__page">
-                    <a class="myPagination__link" href="#" aria-label="Previous">
+            <ul class="navigation">
+                <li class="navigation__page">
+                    <a class="navigation__link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                         <span class="sr-only">Previous</span>
                     </a>
                 </li>
-                <li class="myPagination__page"><a class="myPagination__link" href="#">1</a></li>
-                <li class="myPagination__page"><a class="myPagination__link" href="#">2</a></li>
-                <li class="myPagination__page"><a class="myPagination__link" href="#">3</a></li>
-                <li class="myPagination__page">
-                    <a class="myPagination__link" href="#" aria-label="Next">
+                <li class="navigation__page"><a class="navigation__link" href="#">1</a></li>
+                <li class="navigation__page"><a class="navigation__link" href="#">2</a></li>
+                <li class="navigation__page"><a class="navigation__link" href="#">3</a></li>
+                <li class="navigation__page">
+                    <a class="navigation__link" href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                         <span class="sr-only">Next</span>
                     </a>
                 </li>
             </ul>
         </nav>
+        <h3>This page only shows verified stories, if you wish to read all the stories please check the option below:</h3>
+        <input type="radio" name="verifiedStories">
+        <label>I want to read unverified stories too.</label>
     </div>
 
 </body>
