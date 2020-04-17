@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed</title>
+    <story__title>Feed</story__title>
 
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
@@ -45,26 +45,26 @@
     </nav>
 </header>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="pageInfo">
         <div class="container">
-            <h1 class="display-1 font-weight-bold">Feed</h1>
-            <p class="lead">Get to know, share and help</p>
+            <h1 class="pageInfo__title">Feed</h1>
+            <p class="pageInfo__description">Get to know, share and help</p>
             <hr class="my-2">
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="/write.html" role="button">Add your own!</a>
+            <p class="myLead">
+                <a class="pageInfo__button" href="/write.html" role="button">Add your own!</a>
             </p>
         </div>
     </div>
 
     <div class="container">
-        <div class="card  d-flex flex-sm-col flex-md-row m-5 align-content-center align-items-center">
-            <div class="m-3">
-                <img class="w-100 border border-primary" src="assets/images/kaci-baum-2.jpg" alt="Kaci Baum">
-                <h5 class="card-header rounded-bottom"><a href="/profile.html">@KaciBaum</a></h5>
+        <div class="story">
+            <div class="story__userInfo">
+                <img class="story__userPhoto" src="assets/images/kaci-baum-2.jpg" alt="Kaci Baum">
+                <h5 class="story__userName"><a href="/profile.html">@KaciBaum</a></h5>
             </div>
-            <div class="card-body">
-                <h5 class="card-title display-4 font-weight-bold">What I went through</h5>
-                <p class="card-text drop-cap">Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+            <div class="story__body">
+                <h5 class="story__title">What I went through</h5>
+                <p class="story__brief">Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
                     labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
                     consequat culpa sit Lorem sit velit. Ullamco consectetur id aliqua ad do deserunt mollit
                     sunt duis excepteur. Non fugiat fugiat consequat magna sunt incididunt. Sunt tempor quis
@@ -72,14 +72,14 @@
                     exercitation laborum.</p>
             </div>
         </div>
-        <div class="card  d-flex flex-sm-col flex-md-row m-5 align-content-center align-items-center">
-            <div class="m-3">
-                <img class="w-100 border border-primary" src="assets/images/kaci-baum-2.jpg" alt="Kaci Baum">
-                <h5 class="card-header rounded-bottom"><a href="/profile.html">@KaciBaum</a></h5>
+        <div class="story">
+            <div class="story__userInfo">
+                <img class="story__userPhoto" src="assets/images/kaci-baum-2.jpg" alt="Kaci Baum">
+                <h5 class="story__userName"><a href="/profile.html">@KaciBaum</a></h5>
             </div>
-            <div class="card-body">
-                <h5 class="card-title display-4 font-weight-bold">What I went through</h5>
-                <p class="card-text drop-cap">Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+            <div class="story__body">
+                <h5 class="story__title">What I went through</h5>
+                <p class="story__brief">Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
                     labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
                     consequat culpa sit Lorem sit velit. Ullamco consectetur id aliqua ad do deserunt mollit
                     sunt duis excepteur. Non fugiat fugiat consequat magna sunt incididunt. Sunt tempor quis
@@ -87,14 +87,14 @@
                     exercitation laborum.</p>
             </div>
         </div>
-        <div class="card  d-flex flex-sm-col flex-md-row m-5 align-content-center align-items-center">
-            <div class="m-3">
-                <img class="w-100 border border-primary" src="assets/images/kaci-baum-2.jpg" alt="Kaci Baum">
-                <h5 class="card-header rounded-bottom"><a href="/profile.html">@KaciBaum</a></h5>
+        <div class="story">
+            <div class="story__userInfo">
+                <img class="story__userPhoto" src="assets/images/kaci-baum-2.jpg" alt="Kaci Baum">
+                <h5 class="story__userName"><a href="/profile.html">@KaciBaum</a></h5>
             </div>
-            <div class="card-body">
-                <h5 class="card-title display-4 font-weight-bold">What I went through</h5>
-                <p class="card-text drop-cap">Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+            <div class="story__body">
+                <h5 class="story__title">What I went through</h5>
+                <p class="story__brief">Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
                     labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
                     consequat culpa sit Lorem sit velit. Ullamco consectetur id aliqua ad do deserunt mollit
                     sunt duis excepteur. Non fugiat fugiat consequat magna sunt incididunt. Sunt tempor quis
@@ -103,26 +103,31 @@
             </div>
         </div>
         <nav aria-label="Page navigation">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
+            <ul class="navigation">
+                <li class="navigation__page">
+                    <a class="navigation__link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                         <span class="sr-only">Previous</span>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                <li class="navigation__page"><a class="navigation__link" href="#">1</a></li>
+                <li class="navigation__page"><a class="navigation__link" href="#">2</a></li>
+                <li class="navigation__page"><a class="navigation__link" href="#">3</a></li>
+                <li class="navigation__page">
+                    <a class="navigation__link" href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                         <span class="sr-only">Next</span>
                     </a>
                 </li>
             </ul>
         </nav>
+        <h5>This page only shows verified stories, if you wish to read all the stories please check the option below:</h5>
+        <input type="radio" name="verifiedStories">
+        <label>I want to read unverified stories too.</label>
     </div>
 
 </body>
-
+<div id="fixedfooter">
+    <p>© 2020 Copyright: Vomu</p>
+</div>
 </html>
