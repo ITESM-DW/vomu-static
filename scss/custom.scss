@@ -39,4 +39,5 @@
 body {
   @include gradient-directional($start-color: theme-color(),$end-color: theme-color("secondary"), $deg: 45deg);
   background-attachment: fixed;
+  padding-bottom: 1.5rem;
 }
