@@ -38,11 +38,12 @@
 }
 
 
-.myPagination {
+.navigation {
 	@extend .pagination;
 
 	&__page {
 		@extend .page-item;
+
 	}
 
 	&__link {
@@ -51,7 +52,7 @@
 }
 
 
-.myJumbotron {
+.pageInfo {
 	@extend .jumbotron;
 	@extend .jumbotron-fluid;
 
@@ -60,14 +61,13 @@
 		@extend .font-weight-bold;
 	}
 
+	&__description {
+		@extend .lead;
+	}
+
 	&__button {
 		@extend .btn;
 		@extend .btn-primary;
 		@extend .btn-lg;
 	}
-}
-
-
-.myLead {
-	@extend .lead;
 }
