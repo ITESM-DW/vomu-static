@@ -30,6 +30,7 @@
 @import "components/navbar";
 @import "components/login";
 @import "components/profile";
+@import "components/admin";
 
 body {
   @include gradient-directional($start-color: theme-color(),$end-color: theme-color("secondary"), $deg: 45deg);
