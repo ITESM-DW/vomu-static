@@ -8,3 +8,15 @@ $theme-colors: (
   "secondary": #ffd3b6,
   "danger": #ff736c
 );
+
+$ribbon: (
+	"rotate": 45deg,
+	"horizontal": -50px,
+	"side": "right",
+	"top": 40px,
+	"primary": #a00,
+	"border": #faa,
+	"text": #fff,
+	"text-shadow": 0 0 5px #444,
+	"box-shadow": 0 0 10px #888
+);
