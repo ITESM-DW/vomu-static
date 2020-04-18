@@ -18,8 +18,12 @@
   -webkit-box-shadow: map-get($ribbon,"box-shadow");
      -moz-box-shadow: map-get($ribbon,"box-shadow");
           box-shadow: map-get($ribbon,"box-shadow");
-}
-.ribbon a {
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  a {
   overflow: hidden;
   border: 1px solid map-get($ribbon,"border");
   color: map-get($ribbon,"text");
@@ -31,4 +35,5 @@
   text-decoration: none;
   /* for creating shadow */
   text-shadow: map-get($ribbon,"text-shadow");
+  }
 }
