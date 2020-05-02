@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+	<title>Home</title>
+
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+	<link rel="icon" href="assets/images/education.png" type="image/png">
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<nav class="menu">
+		<div class="ribbon">
+			<a href="#">~ Beta Version ~</a>
+		</div>
+		<div class="menu__logo">
+			<img width="80px" class="logo" src="assets/images/brain.png" alt="Vomu">
+		</div>
+		<button class="menu__opener " type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="menu__options">
+				<li class="active">
+					<a class="menu__options__item" href="./index.html">Home</a>
+				</li>
+				<li class="active">
+					<a class="menu__options__item" href="./login.html">Log in</a>
+				</li>
+				<li class="active">
+					<a class="menu__options__item" href="./signup.html">Sign up</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="userprofile">
+		<div class="userprofile__picture">
+			<img class="userprofile__picture--img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+		</div>
+		<form action="" class="container-fluid">
+			<!-- Username -->
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="addon-wrapping">Username</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Username" aria-label="Username"
+					aria-describedby="addon-wrapping">
+			</div>
+			<!-- Title -->
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="addon-wrapping">Title</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Username" aria-label="Username"
+					aria-describedby="addon-wrapping">
+			</div>
+			<!-- Description -->
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Description</span>
+				</div>
+				<textarea class="form-control" aria-label="With textarea"></textarea>
+			</div>
+			<!-- Profile picture -->
+			<div class="input-group mb-3">
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" id="inputGroupFile02">
+					<label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+				</div>
+				<div class="input-group-append">
+					<span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+				</div>
+			</div>
+			<button type="submit" class="button">Save</button>
+		</form>
+	</div>
+
+</body>
+<div id="fixedfooter">
+	<p>© 2020 Copyright: Vomu</p>
+</div>
+
+</html>

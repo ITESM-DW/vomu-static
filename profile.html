@@ -2,169 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+	<title>Home</title>
 
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+	<link rel="icon" href="assets/images/education.png" type="image/png">
 
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.bubble.css">
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Editor JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <style>
-        /* Tell Quill not to scroll */
-        #quill-container {
-            width: 100%;
-            padding: 50px;
-        }
 
-        #quill-container .ql-editor {
-            font-size: 18px;
-            overflow-y: visible;
-        }
+	<nav class="menu">
+		<div class="ribbon">
+			<a href="#">~ Beta Version ~</a>
+		</div>
+		<div class="menu__logo">
+			<img width="80px" class="logo" src="assets/images/brain.png" alt="Vomu">
+		</div>
+		<button class="menu__opener " type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-        /* Specify our own scrolling container */
-        #scrolling-container {
-            height: 100%;
-            min-height: 100%;
-            overflow-y: auto;
-        }
-    </style>
-    <header>
-        <nav class="menu">
-            <div class="ribbon">
-              <a href="#">~ Beta Version ~</a>
-            </div>
-            <div class="menu__logo">
-                <img width="80px" class="logo" src="assets/images/logo.png" alt="Vomu">
-            </div>
-            <button class="menu__opener " type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="menu__options">
-                    <li class="active">
-                        <a class="menu__options__item" href="./index.html">Home</a>
-                    </li>
-                    <li class="active">
-                        <a class="menu__options__item" href="./feed.html">Feed</a>
-                    </li>
-                    <li class="active">
-                        <a class="menu__options__item" href="./login.html">Login</a>
-                    </li>
-                    <li class="active">
-                        <a class="menu__options__item" href="./quality.html">Quality</a>
-                    </li>
-                    <li class="active">
-                        <a class="menu__options__item" href="./map.html">Map</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="menu__options">
+				<li class="active">
+					<a class="menu__options__item" href="./index.html">Home</a>
+				</li>
+				<li class="active">
+					<a class="menu__options__item" href="./login.html">Log in</a>
+				</li>
+				<li class="active">
+					<a class="menu__options__item" href="./signup.html">Sign up</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-    <section class="profile">
-                <div class="profile__container">
-                    <div class="profile__card">
-                        <div class="profile__card__row">
-                            <div class="profile__row-element">
-                                <img class="profile__img border-black"
-                                    src="assets/images/kaci-baum-2.jpg" alt="">
-                                <h5 class="profile__img__label display-5">@KaciBaum</h1>
-                            </div>
-                            <div class="profile__stories profile__row-element">
-                                <h2>Stories</h2>
-                                <a href="#" class="profile__stories__item active">
-                                    Cras justo odio
-                                </a>
-                                <a href="#" class="profile__stories__item">Dapibus ac facilisis in</a>
-                                <a href="#" class="profile__stories__item">Morbi leo risus</a>
-                                <a href="#" class="profile__stories__item">Porta ac consectetur ac</a>
-                                <a href="#" class="profile__stories__item disabled">Vestibulum at
-                                    eros</a>
-                            </div>
-                        </div>
-                        <div class="profile__summary">
-                            <p class="profile__summary__text drop-case">Et excepteur officia id adipisicing duis aute eiusmod aute
-                                cillum anim esse
-                                nisi. Nulla duis commodo est officia. Laboris ullamco proident aliqua fugiat labore
-                                officia
-                                ad veniam est sint voluptate esse. Nisi occaecat irure et consectetur enim duis commodo
-                                nisi
-                                reprehenderit quis ea cupidatat sit. Ex commodo non adipisicing mollit. Sit magna qui ad
-                                occaecat est dolore ipsum ipsum voluptate dolor veniam. Dolore veniam quis laboris nulla
-                                ex
-                                fugiat anim nulla sunt anim aliqua.</p>
-                            <hr class="profile__break">
-                        </div>
-                    </div>
-                    <form class="profile__form">
-                        <div class="profile__form__group">
-                            <label for="email">Email</label>
-                            <input type="email" class="profile__form__control" id="email" placeholder="marie@curie.com">
-                        </div>
-                        <div class="profile__form__group">
-                            <label for="country">Country</label>
-                            <select class="profile__form__control" id="country">
-                                <option>Mexico</option>
-                                <option>Mexico</option>
-                                <option>Mexico</option>
-                                <option>Mexico</option>
-                                <option>Mexico</option>
-                            </select>
-                        </div>
-                        <div class="profile__form__group">
-                            <label for="exampleFormControlTextarea1">Description</label>
-                            <textarea class="profile__form__conrol" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="profile__form__group">
-                            <div class="profile__form__group">
-                                <label for="file">Profile picture</label>
-                                <input type="file" class="profile__form__control__file" name="" id="" placeholder=""
-                                    aria-describedby="fileHelpId">
-                            </div>
-                        </div>
-                        <button class="profile__main-btn" type="submit">Save</button>
-                    </form>
-                    <div class="profile__compose">
-                        <div class="profile__compose__epic" id="scrollingContainer">
-                            <div id="quill-container">
-                        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <script>
-        var quill = new Quill('#quill-container', {
-            modules: {
-                toolbar: [
-                    [{ header: [1, 2, false] }],
-                    ['bold', 'italic', 'underline'],
-                    ['image', 'code-block']
-                ]
-            },
-            scrollingContainer: '#scrolling-container',
-            placeholder: 'Compose an epic...',
-            theme: 'bubble'
-        });
-    </script>
+	<div class="userprofile">
+		<div class="userprofile__picture">
+			<img class="userprofile__picture--img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+		</div>
+		<div class="userprofile__info">
+			<h4 class="userprofile__info--username">Ramón González</h4>
+			<h6 class="userprofile__info--title">PhD.</h6>
+			<div class="userprofile__info--description">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem deleniti molestiae officiis
+					optio? Facilis aliquam aut dicta impedit autem neque ut cumque, praesentium eveniet quasi accusantium
+					blanditiis. Ipsam, aspernatur consequatur.</p>
+			</div>
+			<a href="profileedit.html" type="button" class="userprofile__info--edit">Edit</a>
+		</div>
+	</div>
 
+	<div class="courses">
+		<div class="course">
+			<img class="course__img" src="https://source.unsplash.com/random/1280x720" alt="">
+			<div class="course__body">
+				<h5 class="course__body--title">Angular 9</h5>
+				<p class="course__body--text">
+					Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+					labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
+					consequat culpa sit Lorem sit velit.
+				</p>
+				<a href="course.html" class="button">View</a>
+				<a href="course-creation.html" class="button">Edit</a>
+			</div>
+		</div>
+		<div class="course">
+			<img class="course__img" src="https://source.unsplash.com/random/1280x720" alt="">
+			<div class="course__body">
+				<h5 class="course__body--title">Angular 9</h5>
+				<p class="course__body--text">
+					Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+					labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
+					consequat culpa sit Lorem sit velit.
+				</p>
+				<a href="course.html" class="button">View</a>
+				<a href="course-creation.html" class="button">Edit</a>
+			</div>
+		</div>
+		<div class="course">
+			<img class="course__img" src="https://source.unsplash.com/random/1280x720" alt="">
+			<div class="course__body">
+				<h5 class="course__body--title">Angular 9</h5>
+				<p class="course__body--text">
+					Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+					labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
+					consequat culpa sit Lorem sit velit.
+				</p>
+				<a href="course.html" class="button">View</a>
+				<a href="course-creation.html" class="button">Edit</a>
+			</div>
+		</div>
+		<div class="course">
+			<img class="course__img" src="https://source.unsplash.com/random/1280x720" alt="">
+			<div class="course__body">
+				<h5 class="course__body--title">Angular 9</h5>
+				<p class="course__body--text">
+					Veniam in in duis aliqua cupidatat velit eu id dolore est reprehenderit
+					labore Lorem. Aliquip et qui deserunt ipsum irure ipsum fugiat enim ea nostrud. Cupidatat
+					consequat culpa sit Lorem sit velit.
+				</p>
+				<a href="course.html" class="button">View</a>
+				<a href="course-creation.html" class="button">Edit</a>
+			</div>
+		</div>
+	</div>
 
 </body>
+<div id="fixedfooter">
+	<p>© 2020 Copyright: Vomu</p>
+</div>
 
 </html>

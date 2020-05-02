@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+	<title>Home</title>
+
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+	<link rel="icon" href="assets/images/education.png" type="image/png">
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="menu">
+	<div class="ribbon">
+		<a href="#">~ Beta Version ~</a>
+	</div>
+	<div class="menu__logo">
+		<img width="80px" class="logo" src="assets/images/brain.png" alt="Vomu">
+	</div>
+	<button class="menu__opener " type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+		aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="menu">
+		<ul class="menu__options">
+			<li class="active">
+				<a class="menu__options__item" href="./index.html">Home</a>
+			</li>
+			<li class="active">
+				<a class="menu__options__item" href="./login.html">Log in</a>
+			</li>
+			<li class="active">
+				<a class="menu__options__item" href="./signup.html">Sign up</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<form action="" class="course-creation">
+	<!-- Title -->
+	<div class="course-creation--group">
+		<div class="course-creation--prepend">
+			<span class="course-creation--text" id="addon-wrapping">Title</span>
+		</div>
+		<input type="text" class="course-creation--control" placeholder="Username" aria-label="Username"
+			aria-describedby="addon-wrapping">
+	</div>
+	<!-- Description -->
+	<div class="course-creation--group">
+		<div class="course-creation--prepend">
+			<span class="course-creation--text">What will students learn?</span>
+		</div>
+		<textarea class="course-creation--control" aria-label="With textarea"></textarea>
+	</div>
+	<!-- Requirements -->
+	<div class="course-creation--group">
+		<div class="course-creation--prepend">
+			<span class="course-creation--text">What are the minimum requirements?</span>
+		</div>
+		<textarea class="course-creation--control" aria-label="With textarea"></textarea>
+	</div>
+	<!-- Profile picture -->
+	<div class="course-creation--group">
+		<div class="custom-file">
+			<input type="file" class="custom-file-input" id="inputGroupFile02">
+			<label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose course image</label>
+		</div>
+		<div class="course-creation--append">
+			<span class="course-creation--text" id="inputGroupFileAddon02">Upload</span>
+		</div>
+	</div>
+	<a class="button button-info">Add Subject</a>
+	<div id="values" class="mb-3" role="tablist" aria-multiselectable="true">
+		<div class="infoCard">
+			<div class="infoCard__header" role="tab" id="learn">
+				<h5>
+					<!-- Title -->
+					<div class="course-creation--group">
+						<a data-toggle="collapse" data-parent="#values" href="#somenumber" aria-expanded="true" aria-controls="learn">
+							<div class="course-creation--prepend">
+									<span class="course-creation--text" id="addon-wrapping">Subject</span>
+							</div>
+						</a>
+						<input type="text" class="course-creation--control" placeholder="Subject">
+						<div class="course-creation--append">
+							<a href="" class="button button-danger">Delete</a>
+						</div>
+					</div>
+				</h5>
+			</div>
+			<div id="somenumber" class="infoCard__collapse" role="tabpanel">
+				<div class="infoCard__body">
+					<div class="course-creation--group">
+						<div class="course-creation--prepend">
+							<span class="course-creation--text">Description</span>
+						</div>
+						<textarea class="course-creation--control" aria-label="With textarea"></textarea>
+					</div>
+					<!-- Video URL -->
+					<div class="course-creation--group">
+						<div class="course-creation--prepend">
+							<span class="course-creation--text" id="addon-wrapping">Video URL</span>
+						</div>
+						<input type="text" class="course-creation--control" placeholder="Subject">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<button class="button">Save</button>
+</form>
+</body>
+<div id="fixedfooter">
+	<p>© 2020 Copyright: Vomu</p>
+</div>
+
+</html>
